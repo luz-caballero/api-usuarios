@@ -19,12 +19,12 @@ services:
     container_name: api-usuarios
     restart: always
     ports:
-      - "8081:8081"
+      - "8080:8080"
     depends_on:
       - postgres
     environment:
       DATABASE_URL: postgres://usuario:password@postgres:5432/usuarios_db
-      PORT: 8081
+      PORT: 8080
 
 volumes:
   pgdata:
