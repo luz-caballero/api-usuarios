@@ -1,8 +1,14 @@
+
+# Ignora dependencias
 node_modules/
+
+# Ignora variables de entorno
 .env
 
-# Elastic Beanstalk Files
+# Ignora archivos de EB excepto config YAML
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-!docker-compose.yml/*.^M
+
+# Ignora docker-compose para evitar subirloa GitHub o AWS
+!docker-compose.yml
